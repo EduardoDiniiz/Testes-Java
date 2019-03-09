@@ -10,7 +10,6 @@ import utils.DateUtils;
 
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class RentalService {
 
@@ -33,14 +32,33 @@ public class RentalService {
             }
         }
 
-        Double price = 0.0;
-
-        for (Movie movie : movies) {
-            price += movie.getPriceRental();
-        }
-
-        Rental rental = new Rental(user, movies, new Date(), DateUtils.adicionarDias(new Date(), 1), price);
+        Rental rental = new Rental(user, movies, new Date(), DateUtils.adicionarDias(new Date(), 1), this.calculatorPayment(movies));
 
         return rental;
+    }
+
+    public Double calculatorPayment(List<Movie> movies) {
+        Double priceTotal = 0.0;
+        Double priceMovie = 0.0;
+        for (int i = 0; i < movies.size(); i++) {
+            priceMovie = movies.get(i).getPriceRental();
+            switch (i) {
+                case 2:
+                    priceMovie = priceMovie * 0.75;
+                    break;
+                case 3:
+                    priceMovie = priceMovie * 0.50;
+                    break;
+                case 4:
+                    priceMovie = priceMovie * 0.25;
+                    break;
+                case 5:
+                    priceMovie = priceMovie * 0.00;
+                    break;
+            }
+            priceTotal += priceMovie;
+        }
+
+        return priceTotal;
     }
 }

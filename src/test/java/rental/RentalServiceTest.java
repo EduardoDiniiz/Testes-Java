@@ -15,6 +15,7 @@ import org.junit.rules.ExpectedException;
 import services.RentalService;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -67,7 +68,7 @@ public class RentalServiceTest {
     @Test
     public void testRental_userEmpty() throws MovieWithoutStockException, MovieNotFoundException {
         //cenario
-        Movie movie = new Movie("Filme 2", 1, 4.0);
+        Movie movie = new Movie("Movie 2", 1, 4.0);
         List<Movie> movies = new ArrayList<>();
         movies.add(movie);
 
@@ -86,5 +87,63 @@ public class RentalServiceTest {
         User user = new User("User 1");
 
         rentalService.rentalMovie(user, movies);
+    }
+
+    @Test
+    public void pay75PcOfValueIn3Movie() throws MovieNotFoundException, RentalException, MovieWithoutStockException {
+        User user = new User("User 1");
+        List<Movie> movies = new ArrayList<>();
+        Movie movie01 = new Movie("Movie 1", 1, 4.0);
+        Movie movie02 = new Movie("Movie 2", 1, 4.0);
+        Movie movie03 = new Movie("Movie 3", 1, 4.0);
+        movies.addAll(Arrays.asList(movie01, movie02, movie03));
+        Rental rental = rentalService.rentalMovie(user, movies);
+        Assert.assertEquals(11.0, rental.getPrice(), 0.1);
+
+    }
+
+    @Test
+    public void pay50PcOfValueIn3Movie() throws MovieNotFoundException, RentalException, MovieWithoutStockException {
+        User user = new User("User 1");
+        List<Movie> movies = new ArrayList<>();
+        Movie movie01 = new Movie("Movie 1", 1, 4.0);
+        Movie movie02 = new Movie("Movie 2", 1, 4.0);
+        Movie movie03 = new Movie("Movie 3", 1, 4.0);
+        Movie movie04 = new Movie("Movie 4", 1, 4.0);
+        movies.addAll(Arrays.asList(movie01, movie02, movie03, movie04));
+        Rental rental = rentalService.rentalMovie(user, movies);
+        Assert.assertEquals(13.0, rental.getPrice(), 0.1);
+
+    }
+
+    @Test
+    public void pay25PcOfValueIn3Movie() throws MovieNotFoundException, RentalException, MovieWithoutStockException {
+        User user = new User("User 1");
+        List<Movie> movies = new ArrayList<>();
+        Movie movie01 = new Movie("Movie 1", 1, 4.0);
+        Movie movie02 = new Movie("Movie 2", 1, 4.0);
+        Movie movie03 = new Movie("Movie 3", 1, 4.0);
+        Movie movie04 = new Movie("Movie 4", 1, 4.0);
+        Movie movie05 = new Movie("Movie 5", 1, 4.0);
+        movies.addAll(Arrays.asList(movie01, movie02, movie03, movie04, movie05));
+        Rental rental = rentalService.rentalMovie(user, movies);
+        Assert.assertEquals(14.0, rental.getPrice(), 0.1);
+
+    }
+
+    @Test
+    public void pay0PcOfValueIn3Movie() throws MovieNotFoundException, RentalException, MovieWithoutStockException {
+        User user = new User("User 1");
+        List<Movie> movies = new ArrayList<>();
+        Movie movie01 = new Movie("Movie 1", 1, 2.0);
+        Movie movie02 = new Movie("Movie 2", 1, 2.0);
+        Movie movie03 = new Movie("Movie 3", 1, 2.0);
+        Movie movie04 = new Movie("Movie 4", 1, 2.0);
+        Movie movie05 = new Movie("Movie 5", 1, 2.0);
+        Movie movie06 = new Movie("Movie 6", 1, 2.0);
+        movies.addAll(Arrays.asList(movie01, movie02, movie03, movie04, movie05, movie06));
+        Rental rental = rentalService.rentalMovie(user, movies);
+        Assert.assertEquals(7.0, rental.getPrice(), 0.1);
+
     }
 }
