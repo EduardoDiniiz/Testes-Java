@@ -8,6 +8,7 @@ import excepetions.MovieWithoutStockException;
 import excepetions.RentalException;
 import utils.DateUtils;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -32,9 +33,14 @@ public class RentalService {
             }
         }
 
-        Rental rental = new Rental(user, movies, new Date(), DateUtils.adicionarDias(new Date(), 1), this.calculatorPayment(movies));
+        if (DateUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY)){
+            Rental rental = new Rental(user, movies, new Date(), DateUtils.adicionarDias(new Date(), 2), this.calculatorPayment(movies));
+            return rental;
+        } else {
+            Rental rental = new Rental(user, movies, new Date(), DateUtils.adicionarDias(new Date(), 1), this.calculatorPayment(movies));
+            return rental;
+        }
 
-        return rental;
     }
 
     public Double calculatorPayment(List<Movie> movies) {
