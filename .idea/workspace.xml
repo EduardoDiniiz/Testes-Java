@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73655acd-39f4-4397-87b6-64feb7d773bc" name="Default Changelist" comment="">
+    <list default="true" id="73655acd-39f4-4397-87b6-64feb7d773bc" name="Default Changelist" comment="Modificando teste caso o dia seja sabado">
+      <change afterPath="$PROJECT_DIR$/src/test/java/rental/CalculationOfRentalValues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/RentalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/RentalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rental/RentalServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rental/RentalServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/RentalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/RentalService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/rental/RentalServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/rental/RentalServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,19 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/excepetions/MovieWithoutStockException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/excepetions/RentalException.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,15 +74,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rental/RentalServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="1254">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#987#988#0" expanded="true" />
                 <element signature="e#1038#1039#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rental/CalculationOfRentalValues.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="57" column="128" selection-start-line="57" selection-start-column="128" selection-end-line="57" selection-end-column="128" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#424#425#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -173,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/test/java/rental/CalcTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/services/RentalService.java" />
         <option value="$PROJECT_DIR$/src/test/java/rental/RentalServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rental/CalculationOfRentalValues.java" />
       </list>
     </option>
   </component>
@@ -297,7 +297,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552174276206" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552177151597" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../estudomc" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -320,7 +320,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RentalServiceTest">
+  <component name="RunManager" selected="JUnit.CalculationOfRentalValues">
+    <configuration name="CalculationOfRentalValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rental.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rental" />
+      <option name="MAIN_CLASS_NAME" value="rental.CalculationOfRentalValues" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RentalServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaTest" />
       <extension name="coverage">
@@ -384,29 +399,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RentalServiceTest.pay75PcOfValueIn3Movie" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rental.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rental" />
-      <option name="MAIN_CLASS_NAME" value="rental.RentalServiceTest" />
-      <option name="METHOD_NAME" value="pay75PcOfValueIn3Movie" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculationOfRentalValues" />
         <item itemvalue="JUnit.RentalServiceTest" />
         <item itemvalue="JUnit.RentalServiceTest.notReturningMovieOnSunday" />
         <item itemvalue="JUnit.RentalServiceTest.pay0PcOfValueIn3Movie" />
         <item itemvalue="JUnit.RentalServiceTest.pay50PcOfValueIn3Movie" />
-        <item itemvalue="JUnit.RentalServiceTest.pay75PcOfValueIn3Movie" />
       </list>
     </recent_temporary>
   </component>
@@ -435,28 +434,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552173296820</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modificando teste caso o dia seja sabado">
+      <created>1552174362873</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552174362873</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RentalServiceTest_pay75PcOfValueIn3Movie - 2019.03.09 at 19h 53m 11s.xml">
-      <configuration name="RentalServiceTest.pay75PcOfValueIn3Movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RentalServiceTest_pay75PcOfValueIn3Movie - 2019.03.09 at 19h 53m 29s.xml">
-      <configuration name="RentalServiceTest.pay75PcOfValueIn3Movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RentalServiceTest_pay50PcOfValueIn3Movie - 2019.03.09 at 19h 54m 08s.xml">
-      <configuration name="RentalServiceTest.pay50PcOfValueIn3Movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RentalServiceTest - 2019.03.09 at 19h 55m 04s.xml">
-      <configuration name="RentalServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RentalServiceTest_pay0PcOfValueIn3Movie - 2019.03.09 at 19h 55m 27s.xml">
-      <configuration name="RentalServiceTest.pay0PcOfValueIn3Movie" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RentalServiceTest_pay0PcOfValueIn3Movie - 2019.03.09 at 19h 55m 34s.xml">
-      <configuration name="RentalServiceTest.pay0PcOfValueIn3Movie" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RentalServiceTest_pay0PcOfValueIn3Movie - 2019.03.09 at 19h 55m 57s.xml">
       <configuration name="RentalServiceTest.pay0PcOfValueIn3Movie" configurationId="JUnit" />
     </history-entry>
@@ -468,6 +456,24 @@
     </history-entry>
     <history-entry file="RentalServiceTest - 2019.03.09 at 20h 27m 41s.xml">
       <configuration name="RentalServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RentalServiceTest - 2019.03.09 at 20h 29m 25s.xml">
+      <configuration name="RentalServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RentalServiceTest - 2019.03.08 at 20h 31m 00s.xml">
+      <configuration name="RentalServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RentalServiceTest - 2019.03.09 at 20h 31m 17s.xml">
+      <configuration name="RentalServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculationOfRentalValues - 2019.03.09 at 21h 03m 34s.xml">
+      <configuration name="CalculationOfRentalValues" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculationOfRentalValues - 2019.03.09 at 21h 08m 11s.xml">
+      <configuration name="CalculationOfRentalValues" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalculationOfRentalValues - 2019.03.09 at 21h 16m 10s.xml">
+      <configuration name="CalculationOfRentalValues" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -508,7 +514,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicio dos testes no RentalService" />
     <MESSAGE value="Adicionando novos servicos e desenvolvendo com &quot;TDD&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando novos servicos e desenvolvendo com &quot;TDD&quot;" />
+    <MESSAGE value="Modificando teste caso o dia seja sabado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificando teste caso o dia seja sabado" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -631,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rental/CalcTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/services/RentalService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -651,14 +648,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/Assume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rental/CalcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rental/RentalServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="1254">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1038#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rental/CalculationOfRentalValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="57" column="128" selection-start-line="57" selection-start-column="128" selection-end-line="57" selection-end-column="128" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
           </folding>
         </state>
       </provider>
