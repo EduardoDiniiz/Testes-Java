@@ -1,4 +1,4 @@
-package rental;
+package calc;
 
 import calculator.Calculator;
 import excepetions.NotDivideByZeroException;
